@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Login</title>
 </head>
 <body>
-    
+
+<main class="login">
+    <section class="login__container">
+        <h1 class="login__titulo">Login</h1>
+        <form name="formCadastroUsuario" class="login__formulario">
+            <input class="login__input" type="email" name="emailUsuario" placeholder="exemplo@exemplo.com" />
+            <span class="login__input-border"></span>
+            <input class="login__input" type="password" name="senhaUsuario" placeholder="Digite aqui sua senha" />
+            <span class="login__input-border"></span>
+            <button class="login__submit" onclick="validarFormLogin()">Login</button>
+            <a href="#" class="login__esqueci-senha">Esqueceu a senha?</a>
+        </form>
+    </section>
+ </main>
+
+<script src="js/validarFormLogin.js"></script>
 </body>
 </html>
